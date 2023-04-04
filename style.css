@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Newsreader:ital,wght@0,400;1,300&family=Playfair+Display&family=Poppins&family=Roboto+Slab:wght@200;300;400&family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #30363d;
+    
+    
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.section-wrapper{
+    width: 100%;
+    margin: 50px auto;
+    min-height: calc(100vh - 350px);
+    font-family: 'Newsreader', serif;
+}
+
+.search-field{
+    max-width: 1024px;
+    margin:0 auto;
+}
+.spinners{
+    display: none;
+    height: calc(100vh - 450px);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.spinners>div{
+    width: 3rem;
+    height: 3rem;
+}
+
+.navigation{
+    padding:50px 10px;
+   display: flex;
+   gap: 20px;
+   align-items: center;
+    height: 50px;
+    box-shadow: 18px 16px 10px 9px rgba(8,2,8,0.2);
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.navigation>h1{
+    color:#0dcaf0;
+}
+.bi-newspaper{
+    color: rgb(233, 47, 47);
+}
+
+.cards{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    height: auto;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    color:#0dcaf0;
+    margin:50px auto auto;
+    box-shadow: 28px -8px 10px 9px rgba(8,2,8,0.2);
+    font-family: 'Alfa Slab One', cursive;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .search-field{
+        width: 80%;
+    }
+
+    .cards{
+      width: 80%;
+      margin: 30px auto;
+    }
+.navigation{
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    font-weight: normal;
+    font-family: 'Newsreader', serif;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinners{
+    width: 80%;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    margin: 30% auto 0;
+    height: auto;
+}
+
+.spinners>div{
+    width: 30px;
+    height: 30px;
+}
+
+  }
